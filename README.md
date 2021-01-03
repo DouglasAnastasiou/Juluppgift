@@ -1,5 +1,5 @@
-# Juluppgift
-Juluppgiften i github
+# Personlig Loggbok
+En mobilapplikation för att snabbt föra en digital loggbok/dagbok över stora och små händelser.
 
 Funktioner: 
 * Skriva en kort text på max 40 tecken.
