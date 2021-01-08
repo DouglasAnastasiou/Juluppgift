@@ -1,5 +1,20 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  #container
+    div(id="users")
+      a please choose an identity
+      br
+      input(type="button" value="User1" onclick="chooseUser(1608546447754)")
+      input(type="button" value="User2" onclick="chooseUser(1608546476120)")
+    div(id="notesPage")
+      input(type="button" onclick="openEditor('new')" id="newNote" value="+")
+      div(id="notes" class="row")
+    div(id="readNote")
+      input(type="button" onclick="showNotes()" maxlength="40" value="back")
+      br
+      input(class="Infofield" id="Title").form-control.btn
+      br
+      br
+      textarea(class="Infofield" id="Content" maxlength="40" cols="22" rows="10").form-control
+      input(type="button" id="save" value="save")
